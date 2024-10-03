@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3dce0a2c8963c05ff2a36415752b82b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3dce0a2c8963c05ff2a36415752b82b0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3dce0a2c8963c05ff2a36415752b82b0 = L.map(
+                "map_3dce0a2c8963c05ff2a36415752b82b0",
+                {
+                    center: [39.9042, 116.4074],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9154049bae0f3888e743872595127e69 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9154049bae0f3888e743872595127e69.addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+            var circle_marker_df3e9922cd691cefa903f444d5b53a58 = L.circleMarker(
+                [39.9886, 116.3978],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_de2e2d14b1a4ca1cc7a168ae47acd565 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1234b2b8fc60d7ff379755be3204666a = $(`<div id="html_1234b2b8fc60d7ff379755be3204666a" style="width: 100.0%; height: 100.0%;">Station: Aotizhongxin<br>Average PM2.5: 69.11 µg/m³<br>Average PM10: 97.27</div>`)[0];
+                popup_de2e2d14b1a4ca1cc7a168ae47acd565.setContent(html_1234b2b8fc60d7ff379755be3204666a);
+            
+        
+
+        circle_marker_df3e9922cd691cefa903f444d5b53a58.bindPopup(popup_de2e2d14b1a4ca1cc7a168ae47acd565)
+        ;
+
+        
+    
+    
+            var circle_marker_f24c0c684ccbf7a86298951249ef14ed = L.circleMarker(
+                [40.2181, 116.1947],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_b48f66103306278366b1a7f675e4690c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62f79b88b286dad8282e6b9cbaa1d8d8 = $(`<div id="html_62f79b88b286dad8282e6b9cbaa1d8d8" style="width: 100.0%; height: 100.0%;">Station: Changping<br>Average PM2.5: 62.48 µg/m³<br>Average PM10: 87.27</div>`)[0];
+                popup_b48f66103306278366b1a7f675e4690c.setContent(html_62f79b88b286dad8282e6b9cbaa1d8d8);
+            
+        
+
+        circle_marker_f24c0c684ccbf7a86298951249ef14ed.bindPopup(popup_b48f66103306278366b1a7f675e4690c)
+        ;
+
+        
+    
+    
+            var circle_marker_a35e0f5135cecc772e4e96ea8c56aecd = L.circleMarker(
+                [40.2986, 116.2202],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_2d07a4fc3bbf4d6d7e453918590057c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e05d056ffc8229603ae5a6d83ea0142f = $(`<div id="html_e05d056ffc8229603ae5a6d83ea0142f" style="width: 100.0%; height: 100.0%;">Station: Dingling<br>Average PM2.5: 57.55 µg/m³<br>Average PM10: 78.06</div>`)[0];
+                popup_2d07a4fc3bbf4d6d7e453918590057c2.setContent(html_e05d056ffc8229603ae5a6d83ea0142f);
+            
+        
+
+        circle_marker_a35e0f5135cecc772e4e96ea8c56aecd.bindPopup(popup_2d07a4fc3bbf4d6d7e453918590057c2)
+        ;
+
+        
+    
+    
+            var circle_marker_90bb62d2143ecde1e8490de5b26ea7f2 = L.circleMarker(
+                [39.9281, 116.4175],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_c50e18054970a40c328d4613aae2f2f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63bd4c2c6b319d316195d572e8bb2af5 = $(`<div id="html_63bd4c2c6b319d316195d572e8bb2af5" style="width: 100.0%; height: 100.0%;">Station: Dongsi<br>Average PM2.5: 70.40 µg/m³<br>Average PM10: 96.28</div>`)[0];
+                popup_c50e18054970a40c328d4613aae2f2f8.setContent(html_63bd4c2c6b319d316195d572e8bb2af5);
+            
+        
+
+        circle_marker_90bb62d2143ecde1e8490de5b26ea7f2.bindPopup(popup_c50e18054970a40c328d4613aae2f2f8)
+        ;
+
+        
+    
+    
+            var circle_marker_ef08328db407005a6661b503a1274ae1 = L.circleMarker(
+                [39.9423, 116.3601],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_160b7fd7856b8201ecb38de6899eea28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deb5930199bbfae195749789b3f5026e = $(`<div id="html_deb5930199bbfae195749789b3f5026e" style="width: 100.0%; height: 100.0%;">Station: Guanyuan<br>Average PM2.5: 70.16 µg/m³<br>Average PM10: 97.93</div>`)[0];
+                popup_160b7fd7856b8201ecb38de6899eea28.setContent(html_deb5930199bbfae195749789b3f5026e);
+            
+        
+
+        circle_marker_ef08328db407005a6661b503a1274ae1.bindPopup(popup_160b7fd7856b8201ecb38de6899eea28)
+        ;
+
+        
+    
+    
+            var circle_marker_c9bd835f5cde87a86fd5cc225c887aea = L.circleMarker(
+                [39.9284, 116.1697],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_8d53dc51943be7882c7ba9567e929496 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fc092dfb00775f21c237eb2eb3c6a36 = $(`<div id="html_3fc092dfb00775f21c237eb2eb3c6a36" style="width: 100.0%; height: 100.0%;">Station: Gucheng<br>Average PM2.5: 70.17 µg/m³<br>Average PM10: 105.74</div>`)[0];
+                popup_8d53dc51943be7882c7ba9567e929496.setContent(html_3fc092dfb00775f21c237eb2eb3c6a36);
+            
+        
+
+        circle_marker_c9bd835f5cde87a86fd5cc225c887aea.bindPopup(popup_8d53dc51943be7882c7ba9567e929496)
+        ;
+
+        
+    
+    
+            var circle_marker_6b087d33fa2ebc0a5dc9b4b5a7281ce3 = L.circleMarker(
+                [40.3288, 116.6318],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_16b55f1d94629521d5a3feec6ca90c3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5085edafc7527f41b3712d61e2b118f = $(`<div id="html_c5085edafc7527f41b3712d61e2b118f" style="width: 100.0%; height: 100.0%;">Station: Huairou<br>Average PM2.5: 61.67 µg/m³<br>Average PM10: 84.50</div>`)[0];
+                popup_16b55f1d94629521d5a3feec6ca90c3b.setContent(html_c5085edafc7527f41b3712d61e2b118f);
+            
+        
+
+        circle_marker_6b087d33fa2ebc0a5dc9b4b5a7281ce3.bindPopup(popup_16b55f1d94629521d5a3feec6ca90c3b)
+        ;
+
+        
+    
+    
+            var circle_marker_4ed1876743f75eee684b3bba37c8d891 = L.circleMarker(
+                [39.9337, 116.4615],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_d1c729e79964fc099acdd7fd8cf51e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cb4af196a128e3805369eaeb2fd17ac = $(`<div id="html_3cb4af196a128e3805369eaeb2fd17ac" style="width: 100.0%; height: 100.0%;">Station: Nongzhanguan<br>Average PM2.5: 69.36 µg/m³<br>Average PM10: 95.74</div>`)[0];
+                popup_d1c729e79964fc099acdd7fd8cf51e89.setContent(html_3cb4af196a128e3805369eaeb2fd17ac);
+            
+        
+
+        circle_marker_4ed1876743f75eee684b3bba37c8d891.bindPopup(popup_d1c729e79964fc099acdd7fd8cf51e89)
+        ;
+
+        
+    
+    
+            var circle_marker_08b276cff5ff9b06011994c7b26efcd2 = L.circleMarker(
+                [40.1275, 116.6544],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_3379aea4be5eb62f7aad4ece01c3bccb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5231ae31690632b65e6da4afb6134b38 = $(`<div id="html_5231ae31690632b65e6da4afb6134b38" style="width: 100.0%; height: 100.0%;">Station: Shunyi<br>Average PM2.5: 66.80 µg/m³<br>Average PM10: 89.19</div>`)[0];
+                popup_3379aea4be5eb62f7aad4ece01c3bccb.setContent(html_5231ae31690632b65e6da4afb6134b38);
+            
+        
+
+        circle_marker_08b276cff5ff9b06011994c7b26efcd2.bindPopup(popup_3379aea4be5eb62f7aad4ece01c3bccb)
+        ;
+
+        
+    
+    
+            var circle_marker_b4ef2b43c1362aae5a199a21ca18bcc2 = L.circleMarker(
+                [39.8824, 116.4066],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_63151f62b2adf2d150baf4af93cdaae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f94fa055af395e4123156c637bb09b7 = $(`<div id="html_5f94fa055af395e4123156c637bb09b7" style="width: 100.0%; height: 100.0%;">Station: Tiantan<br>Average PM2.5: 69.42 µg/m³<br>Average PM10: 95.54</div>`)[0];
+                popup_63151f62b2adf2d150baf4af93cdaae5.setContent(html_5f94fa055af395e4123156c637bb09b7);
+            
+        
+
+        circle_marker_b4ef2b43c1362aae5a199a21ca18bcc2.bindPopup(popup_63151f62b2adf2d150baf4af93cdaae5)
+        ;
+
+        
+    
+    
+            var circle_marker_94a9343a244550626d4018887a0a4886 = L.circleMarker(
+                [39.9733, 116.3013],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_b41ad725fafca57ce29f5c10dd93822e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a11e7fed87db69bb387e23c3d21926c0 = $(`<div id="html_a11e7fed87db69bb387e23c3d21926c0" style="width: 100.0%; height: 100.0%;">Station: Wanliu<br>Average PM2.5: 70.10 µg/m³<br>Average PM10: 98.38</div>`)[0];
+                popup_b41ad725fafca57ce29f5c10dd93822e.setContent(html_a11e7fed87db69bb387e23c3d21926c0);
+            
+        
+
+        circle_marker_94a9343a244550626d4018887a0a4886.bindPopup(popup_b41ad725fafca57ce29f5c10dd93822e)
+        ;
+
+        
+    
+    
+            var circle_marker_385276aba5e7bf11be1a2984b1bf1067 = L.circleMarker(
+                [39.8982, 116.3271],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_3dce0a2c8963c05ff2a36415752b82b0);
+        
+    
+        var popup_77445e7370b9c1364fc9fc29ad490715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_252db81324dc0298cbda71a0b2fa4f48 = $(`<div id="html_252db81324dc0298cbda71a0b2fa4f48" style="width: 100.0%; height: 100.0%;">Station: Wanshouxigong<br>Average PM2.5: 69.90 µg/m³<br>Average PM10: 97.90</div>`)[0];
+                popup_77445e7370b9c1364fc9fc29ad490715.setContent(html_252db81324dc0298cbda71a0b2fa4f48);
+            
+        
+
+        circle_marker_385276aba5e7bf11be1a2984b1bf1067.bindPopup(popup_77445e7370b9c1364fc9fc29ad490715)
+        ;
+
+        
+    
+</script>
+</html>
